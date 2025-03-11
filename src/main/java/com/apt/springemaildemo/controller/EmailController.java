@@ -17,11 +17,11 @@ public class EmailController {
 
     @Autowired
     private EmailSenderService emailSenderService;
-    private static final String TO_EMAIL = "husain@appliedpaymentstech.com";
+    private static final String TO_EMAIL = "info@appliedpaymentstech.com";
     @PostMapping("/send")
     public String sendContactEnquiry(@RequestBody ContactRequest request) {
         try {
-            String subject = "CONTACT ENQUIRY FORM";
+            String subject = "APT ENQUIRY FORM";
 
             String htmlBody = generateHtmlTemplate(request);
 
