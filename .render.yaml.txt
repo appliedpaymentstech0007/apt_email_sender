@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: apt_email_sender
+    env: java
+    buildCommand: ./mvnw clean install
+    startCommand: ./mvn spring-boot:run
