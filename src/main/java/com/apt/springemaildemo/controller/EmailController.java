@@ -21,7 +21,7 @@ public class EmailController {
     @PostMapping("/send")
     public String sendContactEnquiry(@RequestBody ContactRequest request) {
         try {
-            String subject = "APT ENQUIRY FORM";
+            String subject = "APT ENQUIRY THROUGH WEB";
 
             String htmlBody = generateHtmlTemplate(request);
 
