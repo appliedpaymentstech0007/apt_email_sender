@@ -19,7 +19,7 @@ public class EmailSenderService {
         MimeMessage message = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message, MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED, StandardCharsets.UTF_8.name());
 
-        helper.setFrom("appliedpaymentstech007@gmail.com");
+        helper.setFrom("appliedpaymentstech0007@gmail.com");
         helper.setTo(toEmail);
         helper.setSubject(subject);
         helper.setText(htmlBody, true); // Enables HTML content
